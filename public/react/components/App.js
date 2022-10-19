@@ -8,6 +8,7 @@ import apiURL from '../api';
 export const App = () => {
 
 	const [pages, setPages] = useState([]);
+	const [show, setShow] = useState(false)
 
 	async function fetchPages() {
 		try {
@@ -28,8 +29,10 @@ export const App = () => {
 			<h1>WikiVerse</h1>
 			<h2>An interesting 📚</h2>
 			<PagesList pages={pages} />
-			<AddPage />
-
+			<div>
+				<button type="button" onClick={() => setShow(!show)}>Add an Article</button>
+				{show && <AddPage />}
+			</div>
 		</main>
 	)
 }

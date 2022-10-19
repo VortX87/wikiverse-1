@@ -30,7 +30,7 @@ export function AddPage() {
             <form onSubmit={handleSubmit}>
                 <p>Enter the details of your article</p>
                 <div><input type='text' placeholder='title' value={title} onChange={e => setTitle(e.target.value)} /></div>
-                <div><input type='text' placeholder='url' value={slug} onChange={e => setName(e.target.value)} /></div>
+                <div><input type='text' placeholder='url' value={slug} onChange={e => setSlug(e.target.value)} /></div>
                 <div><input type='text' placeholder='content' value={content} onChange={e => setContent(e.target.value)} /></div>
                 <div><input type='text' placeholder='tag' value={tag} onChange={e => setTag(e.target.value)} /></div>
                 <div>
