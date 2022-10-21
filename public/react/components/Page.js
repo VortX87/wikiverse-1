@@ -1,9 +1,11 @@
 import React from 'react';
 import apiURL from '../api'
 
-export const Page = (props) => {
+export const Page = ({ page }) => {
+
+
 
   return <>
-    <h3>{props.page.title}</h3>
+    <h3>{page.title}</h3>
   </>
 }
